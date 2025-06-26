@@ -12,7 +12,7 @@ body {
 
 .container_nav {
   display: flex;
-  background-color: black;
+  background-color: rgb(27, 27, 27);
   width: 100%;
   justify-content: space-around
 }
@@ -56,7 +56,8 @@ ul li {
   justify-content: center;
   width: 65rem;
   margin: auto;
- box-shadow: 12px 12px 2px 1px rgba(15, 15, 15, 0.466); ;
+  box-shadow: 12px 12px 2px 1px rgba(15, 15, 15, 0.466);
+  ;
 }
 
 .container_textos_presentacion {
@@ -172,6 +173,7 @@ ul li {
   border: rgb(15, 15, 15);
   box-shadow: 12px 12px 2px 1px rgba(22, 22, 22, 0.2);
   text-align: center;
+  margin-left: 2.2rem;
 
 }
 
@@ -180,9 +182,85 @@ ul li {
   font-size: 2rem;
   padding-top: 2rem;
 }
-.tarjetas_titulo{
+
+.tarjetas_titulo {
   font-size: 1.5rem;
 }
-.tarjetas_descripcion{
+
+.tarjetas_descripcion {
   line-height: 2rem;
+}
+
+
+/* ULTIMA SECCION!!*/
+
+
+.app_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 2rem;
+  column-gap: 2rem;
+  margin-left: 5rem;
+  padding: 2rem;
+
+
+}
+
+.app {
+  padding: 3rem;
+  background: rgb(27, 27, 27);
+  border-radius: 3%;
+  width: 50%;
+  text-align: center;
+  margin-left: 4.5rem;
+  box-shadow: 12px 12px 2px 1px rgba(22, 22, 22, 0.2);
+
+
+}
+
+.textos_portafolio {
+  font-family: var(--fuente-principal);
+  text-align: center;
+  margin: 3.5rem 0;
+
+
+}
+
+.app_subtitulo {
+  font-size: 0.8rem;
+  font-family: var(--fuente-secundaria);
+  line-height: 1.3rem;
+
+
+}
+
+div h2 {
+  text-decoration-color: whitesmoke;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  font-size: 2.5rem;
+
+}
+
+.texto1 {
+  font-family: var(--fuente-secundaria);
+  color: rgba(253, 38, 74, 0.856);
+  font-weight: 800;
+
+}
+
+.app img {
+  width: 14rem;
+  height: 16rem;
+  border-radius: 10%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.app_titulo {
+  text-decoration-color: whitesmoke;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  font-size: 1.2rem;
 }
