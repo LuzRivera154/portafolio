@@ -169,24 +169,20 @@ ul li {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   row-gap: 2rem;
-  column-gap: 0;
-  margin-left: 2rem;
-  padding: 2rem;
-
+  column-gap: 2rem;
+  padding: 2rem 0 0 3rem;
 }
 
 .tarjetas {
   background: rgb(27, 27, 27);
   padding: 2.5rem 2rem;
-  width: 20rem;
+  max-width: 20rem;
   height: 15rem;
   font-family: var(--fuente-principal);
   border-radius: 1.5rem;
   border: rgb(15, 15, 15);
   box-shadow: 12px 12px 2px 1px rgba(22, 22, 22, 0.2);
   text-align: center;
-  margin-left: 2.2rem;
-
 }
 
 .tj {
@@ -216,19 +212,16 @@ ul li {
   grid-template-rows: repeat(2, auto);
   row-gap: 2rem;
   column-gap: 2rem;
-  margin-left: 2rem;
-  padding: 2rem;
-
-
+  padding: 3rem ;
 }
 
 .app {
   padding: 3rem;
   background: rgb(27, 27, 27);
   border-radius: 3%;
-  width: 50%;
+  max-width: 20rem;
+  margin: 0 auto;
   text-align: center;
-  margin-left: 2rem;
   box-shadow: 12px 12px 2px 1px rgba(22, 22, 22, 0.2);
   transition-property: background;
   transition-duration: 0.5s;
@@ -275,6 +268,7 @@ div h2 {
   border-radius: 10%;
   margin-bottom: 1.5rem;
   object-fit: cover;
+  opacity: 0.7;
 }
 
 .app_titulo {
@@ -295,18 +289,29 @@ div h2 {
   text-decoration-style: solid;
 }
 
+.app img:hover{
+  opacity: 1;
+}
 
 
 
 /* PC!!!! */
-@media (max-width:1342px) {
-.tarjetas_grid,
-.app.grid{
-  margin-left: 0;
+
+
+@media (max-width:1286px) {
+  .container_presentacion{
+    margin: 0;
+  }
 }
-.tarjetas{
-  width: 70%;
-}
+
+@media (max-width:  890px){
+  .tarjetas_grid{
+    grid-template-columns: 1fr;
+    
+  }
+  .app_grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -319,7 +324,7 @@ div h2 {
         */
 /*MOBILE*/
 
-  
+ 
 
 @media (max-width: 790px){
  .container_nav{
